@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://yourname.github.io/wiki/</loc>
+         <lastmod>2025-12-20</lastmod>
+    </url>
+    <url>
+         <loc>https://yourname.github.io/wiki/dsp/</loc>
+         <lastmod>2025-12-20</lastmod>
+    </url>
+    <url>
+         <loc>https://yourname.github.io/wiki/dsp/fft/</loc>
+         <lastmod>2025-12-20</lastmod>
+    </url>
+    <url>
+         <loc>https://yourname.github.io/wiki/embedded/</loc>
+         <lastmod>2025-12-20</lastmod>
+    </url>
+    <url>
+         <loc>https://yourname.github.io/wiki/embedded/pcb_design/</loc>
+         <lastmod>2025-12-20</lastmod>
+    </url>
+</urlset>
