@@ -1,0 +1,80 @@
+site_name: Bin's Wiki  # 你的网站名字
+site_url: https://yourname.github.io/wiki/
+repo_url: https://github.com/yourname/wiki
+repo_name: GitHub
+
+# 1. 主题核心设置
+theme:
+  name: material
+  language: zh         # 设为中文
+  
+  # 这里的 palette 控制颜色切换（日间/夜间模式）
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo  # 主色调，可选 teal, blue, indigo 等
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate    # 深色模式的主题名
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至亮色模式
+
+  # 功能特性 (对应截图风格)
+  features:
+    - navigation.tabs        # 开启顶部导航栏 (像截图那样的大分类)
+    - navigation.sections    # 侧边栏分组
+    - navigation.expand      # 默认展开侧边栏
+    - navigation.top         # 返回顶部按钮
+    - toc.integrate          # 将目录集成到侧边栏 (适合小屏幕)
+    - content.code.copy      # 代码块右上角显示复制按钮
+
+# 2. 插件 (启用搜索)
+plugins:
+  - search
+
+# 3. Markdown 扩展 (这是理工科知识库的灵魂)
+markdown_extensions:
+  # 脚注和元数据
+  - meta
+  - footnotes
+  
+  # 提示块 (Admonitions) - 写 "注意"、"警告" 很漂亮
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences  # 支持嵌套代码块
+
+  # 代码高亮
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+  # 数学公式 (LaTeX) - 记录 DSP/SNN 公式必备
+  - pymdownx.arithmatex:
+      generic: true
+
+  # 选项卡 (比如展示 C 和 Python 两种代码实现)
+  - pymdownx.tabbed:
+      alternate_style: true 
+# 👇 新增这三个，专门用于修复卡片和图标显示问题
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      
+# 4. 引入 MathJax 脚本 (渲染公式必须)
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+
+copyright: Copyright &copy; 2025 Your Name
