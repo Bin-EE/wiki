@@ -12,7 +12,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :material-waveform: **大三上学期笔记**
+-   :material-notebook: **大三上学期笔记**
     
     [:octicons-arrow-right-24: 进入板块](notes_sem5/index.md)
 
