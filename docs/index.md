@@ -14,6 +14,6 @@ hide:
 
 -   :material-waveform: **大三上学期笔记**
     
-    [:octicons-arrow-right-24: 进入板块](大三上学期笔记/index.md)
+    [:octicons-arrow-right-24: 进入板块](notes_sem5/index.md)
 
 </div>
