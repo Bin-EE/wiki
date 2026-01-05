@@ -12,8 +12,8 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :material-waveform: **数字信号处理**
+-   :material-waveform: **大三上学期笔记**
     
-    [:octicons-arrow-right-24: 进入板块](数字信号处理/index.md)
+    [:octicons-arrow-right-24: 进入板块](大三上学期笔记/index.md)
 
 </div>
